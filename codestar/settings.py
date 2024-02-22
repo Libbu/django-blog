@@ -89,6 +89,12 @@ DATABASES = {
     'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
 }
 
+#allow forms to be posted to site
+CSRF_TRUSTED_ORIGINS = [
+    "https://8000-libbu-djangoblog-0jd6pbzf7x6.ws-eu108.gitpod.io/",
+    "https://*.herokuapp.com"
+]
+
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
 
