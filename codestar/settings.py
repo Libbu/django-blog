@@ -27,7 +27,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['8000-libbu-djangoblog-0jd6pbzf7x6.ws-eu108.gitpod.io','django-blog-ci-lms-7c2ee381d5d4.herokuapp.com']
 
@@ -91,7 +91,7 @@ DATABASES = {
 
 #allow forms to be posted to site
 CSRF_TRUSTED_ORIGINS = [
-    "https://8000-libbu-djangoblog-0jd6pbzf7x6.ws-eu108.gitpod.io/",
+    "https://8000-libbu-djangoblog-0jd6pbzf7x6.ws-eu108.gitpod.io",
     "https://*.herokuapp.com"
 ]
 
