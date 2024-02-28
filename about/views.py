@@ -23,7 +23,6 @@ def about_me(request):
     """
 
     if request.method == "POST":
-        print( "Received a POST request")
         collaborate_form = CollaborateForm(data=request.POST)
         if collaborate_form.is_valid():
             collaborate_form.save()
