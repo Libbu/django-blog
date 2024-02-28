@@ -101,6 +101,10 @@ body {
     color: #E84610;
 }
 
+.profile-image {
+    width: 75%;
+}
+
 .post-title {
     margin-top: 10%;
     margin-left: 5%;
